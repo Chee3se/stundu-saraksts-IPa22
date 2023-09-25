@@ -12,7 +12,7 @@ export default function Stundas() {
                 <h2>{entry[0]}</h2>
                 <ul>
                 {entry[1].map((item, i) => {
-                return <li>{(i+1) + `. ` + item}</li>}
+                return <li><p className="stun">{(i+1) + `. ` + item.stunda}</p><p className="kab">{item.kabinets + `-` + item.skolotaja}</p></li>}
                 )}
                 </ul>
                 </>

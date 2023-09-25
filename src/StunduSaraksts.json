@@ -5,25 +5,93 @@
         "kabinets": "C.201",
         "skolotaja": "D.Tarasova"
     },
-    "Sociālās zinības un vēsture",
-    "Sistēmu programmēšana",
-    "Sistēmu programmēšana"],
+    {
+        "stunda": "Sociālās zinības un vēsture",
+        "kabinets": "C.206",
+        "skolotaja": "I.Eglīte"
+    },
+    {
+        "stunda": "Sistēmu programmēšana",
+        "kabinets": "C.203",
+        "skolotaja": "J.Krīgerts"
+    },
+    {
+        "stunda": "Sistēmu programmēšana",
+        "kabinets": "C.203",
+        "skolotaja": "J.Krīgerts"
+    }],
     "Otrdiena": 
-    ["Sociālās zinības un vēsture",
-    "Dabaszinības",
-    "Matemātika",
-    "Sports"],
+    [{
+        "stunda": "Sociālās zinības un vēsture",
+        "kabinets": "C.206",
+        "skolotaja": "I.Eglīte"
+    },
+    {
+        "stunda": "Dabaszinības",
+        "kabinets": "C.207",
+        "skolotaja": "M.Strade"
+    },
+    {
+        "stunda": "Matemātika",
+        "kabinets": "C.304",
+        "skolotaja": "G.Upena"
+    },
+    {
+        "stunda": "Sports",
+        "kabinets": "C.sporta zāle",
+        "skolotaja": "K.Puriņa"
+    }],
     "Trešdiena": 
-    ["Datorsistēmas un datortīkli",
-    "Datorsistēmas un datortīkli",
-    "Sistēmu programmēšana",
-    "Sistēmu programmēšana"],
+    [{
+        "stunda": "Datorsistēmas un datortīkli",
+        "kabinets": "C.110",
+        "skolotaja": "S.Iesmiņš"
+    },
+    {
+        "stunda": "Datorsistēmas un datortīkli",
+        "kabinets": "C.110",
+        "skolotaja": "S.Iesmiņš"
+    },
+    {
+        "stunda": "Sistēmu programmēšana",
+        "kabinets": "C.203",
+        "skolotaja": "J.Krīgerts"
+    },
+    {
+        "stunda": "Sistēmu programmēšana",
+        "kabinets": "C.203",
+        "skolotaja": "J.Krīgerts"
+    }],
     "Ceturtdiena": 
-    ["Sistēmu programmēšana",
-    "Matemātika",
-    "Latviešu valoda un literatūra",
-    "\"Valodas, kultūras izpratne un izpausmes A\""],
+    [{
+        "stunda": "Sistēmu programmēšana",
+        "kabinets": "C.203",
+        "skolotaja": "J.Krīgerts"
+    },
+    {
+        "stunda": "Matemātika",
+        "kabinets": "C.304",
+        "skolotaja": "G.Upena"
+    },
+    {
+        "stunda": "Latviešu valoda un literatūra",
+        "kabinets": "C.305",
+        "skolotaja": "G.Jēgere"
+    },
+    {
+        "stunda": "\"Valodas, kultūras izpratne un izpausmes A\"",
+        "kabinets": "C.206",
+        "skolotaja": "Ž.Otersone"
+    }],
     "Piektdiena": 
-    ["Angļu valoda",
-    "Sociālās zinības un vēsture"]
+    [{
+        "stunda": "Angļu valoda",
+        "kabinets": "C.306",
+        "skolotaja": "T.Stālmane"
+    },
+    {
+        "stunda": "Sociālās zinības un vēsture",
+        "kabinets": "C.206",
+        "skolotaja": "I.Eglīte"
+    }]
 }

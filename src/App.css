@@ -28,3 +28,14 @@ li {
 li:last-child {
   border: 2px solid;
 }
+.kab {
+  display: inline-block;
+  font-size: 12px;
+  width: 30%;
+  margin: 0px;
+}
+.stun {
+  display: inline-block;
+  width: 70%;
+  margin: 0px;
+}
