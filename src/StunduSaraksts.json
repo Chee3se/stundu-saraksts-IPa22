@@ -1,5 +1,6 @@
-{
-    "Pirmdiena": 
+[
+    "25/09/2023",
+    {"Pirmdiena": 
     [{
         "stunda": "Krievu valoda",
         "kabinets": "C.201",
@@ -93,5 +94,5 @@
         "stunda": "Sociālās zinības un vēsture",
         "kabinets": "C.206",
         "skolotaja": "I.Eglīte"
-    }]
-}
+    }]}
+]
