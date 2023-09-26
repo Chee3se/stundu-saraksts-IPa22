@@ -13,8 +13,10 @@ export default function Stundas() {
                 <>
                 <h2>{entry[0]}</h2>
                 <ul className={day == now.getDay() ? 'active' : null}>
-                {entry[1].map((item, i) => {
-                return <li key={entry[0] + `s ` + (i+1) + `. stunda`}><p className="stun">{(i+1) + `. ` + item.stunda}</p><p className="kab">{item.kabinets + `-` + item.skolotaja}</p></li>}
+                {entry[1].map((item, i) => 
+                {
+                    return <li key={entry[0] + ", " + (i+1) + ". stunda"}><p className="stun">{(i+1) + `. ` + item.stunda}</p><p className="kab">{item.kabinets + `-` + item.skolotaja}</p></li>
+                }
                 )}
                 </ul>
                 </>
