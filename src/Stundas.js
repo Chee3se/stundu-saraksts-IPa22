@@ -11,7 +11,7 @@ export default function Stundas() {
             day++
             return (
                 <>
-                <h2>{entry[0]}</h2>
+                <h2 className={day == now.getDay() ? 'active' : null}>{entry[0]}</h2>
                 <ul className={day == now.getDay() ? 'active' : null}>
                 {entry[1].map((item, i) => 
                 {
