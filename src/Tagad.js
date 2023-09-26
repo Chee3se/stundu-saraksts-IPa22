@@ -26,11 +26,10 @@ export default function Tagad() {
             if (now.getDay()==id) {
                 for (let i = 0; i < StunduLaiki.length; i++) {
                     const element = StunduLaiki[i]
-                    const roelement = StunduLaiki[StunduLaiki.length-1-i]
                     if (getDateFromTime(element[0])<now&&getDateFromTime(element[1])>now) {
                         result = "tagad ir "+entry[1][i].stunda
-                    } else if (getDateFromTime(roelement[0])>now) {
-                        result = "nakošā stunda ir "+entry[1][entry.length-i+1].stunda
+                    } else if (getDateFromTime(element[0])>now) {
+                        result = "nakošā stunda ir "+entry[1][i].stunda
                     } else {
                         result = "stundas beigušās"
                     }
