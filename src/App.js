@@ -8,20 +8,8 @@ export default function App() {
   const [StunduSaraksts, setStunduSaraksts] = useState("")
   const now = new Date()
   useEffect(()=>{
-    (()=>{
-      let isError = false
-      try {
-        fetch("https://skrazzo.sites.hex.lv/projects/class-list/api.php")
-      } catch (error) {
-        isError = true
-        console.log(error)
-      }
-      if (isError) {
-        return fetch("./Backup.json")
-      } else {
-        return fetch("https://skrazzo.sites.hex.lv/projects/class-list/api.php")
-      }
-    }).then(response => response.json())
+    fetch("./Backup.json")
+    .then(response => response.json())
     .then(data => setStunduSaraksts(data.IPa22))
   },[])
   return (
