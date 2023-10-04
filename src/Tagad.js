@@ -1,7 +1,14 @@
+import {useState, useEffect} from "react"
+
 export default function Tagad(params) {
     //Const's
     const stundas = params.info;
-    const now = new Date();
+    const [now, setNow] = useState(new Date())
+    useEffect(() => {
+        setTimeout(() => {
+            setNow(new Date())
+        }, 1000);
+    });
     const StunduLaiki = [
         ["8:30:00", "9:55:00"],
         ["10:15:00", "11:40:00"],
