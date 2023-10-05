@@ -15,42 +15,6 @@ h1 {
   grid-row: 2;
   grid-column: 2;
 }
-ul {
-  display: grid;
-}
-li {
-  padding: 2px;
-  border: 6px solid black;
-  border-bottom: none;
-  list-style: none;
-  width: 100%;
-}
-li:last-child {
-  border: 6px solid;
-}
-.kab {
-  display: inline-block;
-  font-size: 14px;
-  width: 20%;
-  margin: 0px;
-  font-weight:bolder;
-}
-.stun {
-  display: inline-block;
-  width: 70%;
-  margin: 0px;
-  font-weight:bold;
-  font-size: 35px;
-  margin-right: 10%;
-}
-.active>li {
-  border: 6px solid;
-  border-bottom: none;
-  animation: borderColorRotate 6s linear 0s infinite;
-}
-.active>li:last-child {
-  border: 6px solid;
-}
 .Stunda {
   grid-row: 2;
   grid-column: 3;
@@ -61,10 +25,46 @@ li:last-child {
   border: 6px solid black;
   font-size: 30px;
 }
+
+/*-----Main-Stuff-----*/
+
+table {
+  width: 100%;
+}
 .Stunda>h2 {
   padding-left: 10px;
   padding-right: 10px;
 }
+.stun {
+  font-weight: bold;
+  font-size: larger;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+.kab {
+  font-weight: bold;
+  font-size: smaller;
+}
+
+
+/*-----Tables-----*/
+
+table, th, td {
+  border: 6px solid black;
+  border-collapse: collapse;
+}
+table, th, td:first-child {
+  border-right: none;
+}
+table, th, td:last-child {
+  border-left: none;
+}
+.active>tr>td {
+  animation: borderColorRotate 6s linear 0s infinite;
+}
+
+/*-----Mobile-----*/
+
 @media only screen and (max-width: 600px) {
   .App {
     display: block;
@@ -105,10 +105,7 @@ li:last-child {
   h2.active {
     animation: colorRotate 6s linear 0s infinite;
   }
-  .active>li {
-    border: none;
-  }
-  .active>li:last-child {
+  table, th, td {
     border: none;
   }
   h2 {
@@ -120,7 +117,9 @@ li:last-child {
     padding-bottom: 20px;
   }
 }
-/* Happy! */
+
+/*-----Animations-----*/
+
 @keyframes borderColorRotate {
   from {
     border-color: #4e4ec2;

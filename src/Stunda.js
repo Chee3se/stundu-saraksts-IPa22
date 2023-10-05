@@ -1,9 +1,9 @@
 export default function Stunda(params) {
     //console.log(params)
     return (
-        <li>
-            <p className="stun">{params.name+". "+params.class}</p>
-            <p className="kab">{params.teacher}</p>
-        </li>
+        <tr>
+            <td className="stun">{params.name+". "+params.class}</td>
+            <td className="kab">{params.teacher}</td>
+        </tr>
     )
 }
