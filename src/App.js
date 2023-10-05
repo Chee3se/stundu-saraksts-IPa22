@@ -8,8 +8,9 @@ export default function App() {
   const [StunduSaraksts, setStunduSaraksts] = useState("")
   const now = new Date()
   useEffect(()=>{
-    //fetch("http://skrazzo.sites.hex.lv/projects/class-list/api.php")
-    fetch("./Backup.json")
+    fetch("http://skrazzo.sites.hex.lv/projects/class-list/api.php", {
+      referrerPolicy: "unsafe-url" 
+    })
     .then(response => response.json())
     .then(data => setStunduSaraksts(data.IPa22))
   },[])
