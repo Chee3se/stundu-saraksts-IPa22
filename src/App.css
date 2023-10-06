@@ -24,6 +24,9 @@ h1 {
   border-radius: 50px;
   border: 6px solid black;
   font-size: 30px;
+  position: fixed;
+  right: 5vw;
+  top: 40vh;
 }
 
 /*-----Main-Stuff-----*/
@@ -88,6 +91,7 @@ table, th, td:last-child {
     border-radius: 0px;
     border: none;
     left: 0px;
+    top: unset;
   }
   .Stundas {
     display: grid;

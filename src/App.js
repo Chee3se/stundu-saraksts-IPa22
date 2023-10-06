@@ -1,17 +1,19 @@
 import './App.css';
 import Diena from "./Diena"
 import Tagad from "./Tagad"
+import Menu from "./Menu"
 import {useEffect} from "react"
 import {useState} from "react"
 
 export default function App() {
   const [StunduSaraksts, setStunduSaraksts] = useState("")
+  const [Grupa, setGrupa] = useState("IPa22")
   const now = new Date()
   useEffect(()=>{
     //fetch("http://skrazzo.sites.hex.lv/projects/class-list/api.php")
     fetch("./Backup.json")
     .then(response => response.json())
-    .then(data => setStunduSaraksts(data.IPa22))
+    .then(data => setStunduSaraksts(data[Grupa]))
   },[])
   return (
     <div className="App">

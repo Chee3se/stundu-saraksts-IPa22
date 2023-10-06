@@ -1,7 +1,6 @@
 import Stunda from "./Stunda"
 export default function Diena(params) {
     const need = params.info[1]
-    const now = new Date()
     return (
         <>
             <h2 className={params.active?"active":null}>{params.name}</h2>
