@@ -44,6 +44,7 @@ export default function App() {
               break;
           }
           return <Diena 
+            key={day+i}
             name={day}
             info={item}
             active={i+1==now.getDay()}
@@ -51,6 +52,7 @@ export default function App() {
         })}
       </div>
       <Tagad info={StunduSaraksts}/>
+      <Menu />
     </div>
   );
 }

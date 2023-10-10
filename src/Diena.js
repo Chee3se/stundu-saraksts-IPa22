@@ -5,10 +5,12 @@ export default function Diena(params) {
         <>
             <h2 className={params.active?"active":null}>{params.name}</h2>
             <table className={params.active?"active":null}>
+                <tbody>
                 {
                     need.classes.map((item, i)=>{
                         return (
-                            <Stunda 
+                            <Stunda
+                                key={i} 
                                 name={i+1}
                                 class={need.classes[i]}
                                 teacher={need.teachers[i]}
@@ -16,6 +18,7 @@ export default function Diena(params) {
                         )
                     })
                 }
+                </tbody>
             </table>
         </>
     )
