@@ -7,13 +7,13 @@ import {useState} from "react"
 
 export default function App() {
   const [StunduSaraksts, setStunduSaraksts] = useState("")
-  const [Grupa, setGrupa] = useState("IPa22")
+  //const [Grupa, setGrupa] = useState("IPa22")
   const now = new Date()
   useEffect(()=>{
     //fetch("http://skrazzo.sites.hex.lv/projects/class-list/api.php")
     fetch("./Backup.json")
     .then(response => response.json())
-    .then(data => setStunduSaraksts(data[Grupa]))
+    .then(data => setStunduSaraksts(data["IPa22"]))
   },[])
   return (
     <div className="App">
@@ -47,12 +47,12 @@ export default function App() {
             key={day+i}
             name={day}
             info={item}
-            active={i+1==now.getDay()}
+            active={i+1===now.getDay()}
           />
         })}
       </div>
       <Tagad info={StunduSaraksts}/>
-      <Menu />
+      <Menu info={StunduSaraksts}/>
     </div>
   );
 }

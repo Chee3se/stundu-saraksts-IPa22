@@ -17,7 +17,6 @@ export default function Tagad(params) {
     ];
     //Var's
     let id = 0
-    let found = false
     //Functions
     function getDateFromTime(time) {
         return new Date(now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()+" "+time)
@@ -27,7 +26,7 @@ export default function Tagad(params) {
         {Object.entries(stundas).map(entry => {
             id++
             let result
-            if (now.getDay()==id) {
+            if (now.getDay()===id) {
                 for (let i = StunduLaiki.length-1; i > -1; i--) {
                     const element = StunduLaiki[i]
                     if (getDateFromTime(element[0])<=now&&getDateFromTime(element[1])>=now) {
@@ -38,6 +37,7 @@ export default function Tagad(params) {
                 }
                 return <h2 key={"result"}>{result != null ? result : "stundas beigušās" }</h2>
             }
+            return null
         })}
         </div>
     )

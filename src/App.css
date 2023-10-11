@@ -5,6 +5,7 @@
   justify-content: center;
   width: 100%;
   grid-template-columns: 50px 1fr 1fr;
+  z-index: 10;
 }
 h1 {
   grid-column: 2 / span 3;
@@ -68,7 +69,10 @@ table, td:last-child {
 
 /*-----Menu-----*/
 
-.menu-container {
+#menu-container.active {
+  display: block;
+}
+#menu-container {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -76,15 +80,21 @@ table, td:last-child {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+  transition: .5s;
 
 }
-.menu {
+#menu.active {
+  opacity: 100;
+}
+#menu {
+  opacity: 0;
+  z-index: 2;
   width: 70px;
   position: fixed;
   right: 0px;
   top: 0px;
 }
-.close {
+#close {
   width: 70px;
   float: right;
 }
