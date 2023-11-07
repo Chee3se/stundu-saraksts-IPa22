@@ -10,8 +10,7 @@ export default function App() {
   //const [Grupa, setGrupa] = useState("IPa22")
   const now = new Date()
   useEffect(()=>{
-    //fetch("http://skrazzo.sites.hex.lv/projects/class-list/api.php")
-    fetch("./Backup.json")
+    fetch("https://cheese-cake.onthewifi.com/api/lessons")
     .then(response => response.json())
     .then(data => setStunduSaraksts(data["IPa22"]))
   },[])
